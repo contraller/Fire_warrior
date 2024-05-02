@@ -1,0 +1,27 @@
+--cpu Cortex-M3
+"fire_shit\startup_stm32f103xb.o"
+"fire_shit\motor.o"
+"fire_shit\firecon.o"
+"fire_shit\main.o"
+"fire_shit\gpio.o"
+"fire_shit\tim.o"
+"fire_shit\stm32f1xx_it.o"
+"fire_shit\stm32f1xx_hal_msp.o"
+"fire_shit\stm32f1xx_hal_gpio_ex.o"
+"fire_shit\stm32f1xx_hal_tim.o"
+"fire_shit\stm32f1xx_hal_tim_ex.o"
+"fire_shit\stm32f1xx_hal.o"
+"fire_shit\stm32f1xx_hal_rcc.o"
+"fire_shit\stm32f1xx_hal_rcc_ex.o"
+"fire_shit\stm32f1xx_hal_gpio.o"
+"fire_shit\stm32f1xx_hal_dma.o"
+"fire_shit\stm32f1xx_hal_cortex.o"
+"fire_shit\stm32f1xx_hal_pwr.o"
+"fire_shit\stm32f1xx_hal_flash.o"
+"fire_shit\stm32f1xx_hal_flash_ex.o"
+"fire_shit\stm32f1xx_hal_exti.o"
+"fire_shit\system_stm32f1xx.o"
+--strict --scatter "fire_shit\fire_shit.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "fire_shit.map" -o fire_shit\fire_shit.axf
